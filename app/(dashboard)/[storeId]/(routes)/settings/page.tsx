@@ -1,4 +1,4 @@
-import SettingsForm from "@/components/shared/SettingsForm";
+import SettingsForm from "@/app/(dashboard)/[storeId]/(routes)/settings/_components/SettingsForm";
 import { db } from "@/lib/database/prisma";
 import { auth } from "@clerk/nextjs";
 import { redirect } from "next/navigation";

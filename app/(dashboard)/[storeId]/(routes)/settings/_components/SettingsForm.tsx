@@ -1,10 +1,10 @@
 "use client";
 
 import { Store } from "@prisma/client";
-import Heading from "../global/Heading";
-import { Button } from "../ui/button";
+import Heading from "../../../../../../components/ui/Heading";
+import { Button } from "../../../../../../components/ui/button";
 import { Trash2Icon } from "lucide-react";
-import { Separator } from "../ui/separator";
+import { Separator } from "../../../../../../components/ui/separator";
 import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -16,13 +16,13 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "../ui/form";
+} from "../../../../../../components/ui/form";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useParams, useRouter } from "next/navigation";
-import { Input } from "../ui/input";
-import { AlertModal } from "../modals/alert-modal";
-import { ApiAlert } from "../ui/api-alert";
+import { Input } from "../../../../../../components/ui/input";
+import { AlertModal } from "../../../../../../components/modals/alert-modal";
+import { ApiAlert } from "../../../../../../components/ui/api-alert";
 import { useOrigin } from "@/hooks/use-origin";
 
 const formSchema = z.object({

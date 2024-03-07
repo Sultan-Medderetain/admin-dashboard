@@ -1,4 +1,4 @@
-import Navbar from "@/components/shared/Navbar";
+import Navbar from "@/components/Navbar";
 import { db } from "@/lib/database/prisma";
 import { auth } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
