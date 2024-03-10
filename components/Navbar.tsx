@@ -3,6 +3,7 @@ import MainNav from "./MainNav";
 import StoreSwitcher from "./StoreSwitcher";
 import { redirect } from "next/navigation";
 import { db } from "@/lib/database/prisma";
+import { ModeToggle } from "./ui/mode-toggle";
 
 const Navbar = async () => {
   const { userId } = auth();
@@ -22,7 +23,8 @@ const Navbar = async () => {
       <div className="flex h-16 items-center justify-between">
         <StoreSwitcher items={stores} />
         <MainNav className="mx-6" />
-        <div className="">
+        <div className="flex items-center justify-center gap-2">
+          <ModeToggle />
           <UserButton />
         </div>
       </div>
