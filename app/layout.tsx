@@ -10,7 +10,7 @@ import { ThemeProvider } from "@/providers/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Dashboard",
+  title: "Ahads Pane",
   description: "E-Commerce Dashboard",
 };
 
